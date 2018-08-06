@@ -15,9 +15,9 @@ public class TmParser {
 
 
     public static long convertToMilliseconds(String timespan) throws IllegalArgumentException{
+        Objects.requireNonNull(timespan, "timespan can't be null");
         long longDate;
         timespan=timespan.toLowerCase();
-        Objects.requireNonNull(timespan, "timespan can't be null");
         String[] timespanArray = timespan.split("\\s");
         long tSpan=0;
         for (String pDate: timespanArray){
