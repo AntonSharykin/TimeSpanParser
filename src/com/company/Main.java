@@ -9,6 +9,6 @@ public class Main {
 
 
 
-        System.out.println(TmParser.convertToMilliseconds("2h 1s"));
+        System.out.println(TmParser.convertToMilliseconds("2H 1s"));
     }
 }
